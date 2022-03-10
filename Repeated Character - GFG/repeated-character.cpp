@@ -11,7 +11,6 @@ class Solution
     {
         //code here.
         unordered_map<char, int> umap;
-        char ans='-1';
         for (int i=0;i<s.size(); i++){
             umap[s[i]]++;
         }
