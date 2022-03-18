@@ -1,0 +1,30 @@
+# String Reversal
+## Easy
+<div class="problem-statement">
+                <p></p><p><span style="font-size:18px">Given a string, say <strong>S</strong>, print it in reverse manner eliminating the repeated characters and spaces.</span></p>
+
+<p><span style="font-size:18px"><strong>Example 1:</strong></span></p>
+
+<pre><span style="font-size:18px"><strong>Input:</strong> S = "GEEKS FOR GEEKS"
+<strong>Output:</strong> "SKEGROF"
+</span>
+</pre>
+
+<p><span style="font-size:18px"><strong>Example 2:</strong></span></p>
+
+<pre><span style="font-size:18px"><strong>Input:</strong> S = "I AM AWESOME"</span><span style="font-size:18px">
+<strong>Output:</strong> "EMOSWAI"</span><span style="font-size:18px">
+</span>
+</pre>
+
+<p><br>
+<span style="font-size:18px"><strong>Your Task:</strong><br>
+You don't need to read input or print anything. Your task is to complete the function&nbsp;<strong>reverseString()&nbsp;</strong>which takes a string S as input parameter and returns a modified string.&nbsp;</span></p>
+
+<p><br>
+<span style="font-size:18px"><strong>Expected Time Complexity:&nbsp;</strong>O(|S|), where |S| denotes length of string.<br>
+<strong>Expected Auxiliary Space:&nbsp;</strong>O(1).</span></p>
+
+<p>&nbsp;</p>
+ <p></p>
+            </div>
