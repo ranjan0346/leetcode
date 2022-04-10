@@ -1,31 +1,26 @@
 class Solution {
 public:
     string sortString(string s) {
-        int n=s.size();
-        string ans ="";
-        
-        map<char, int> m;
-        
-        for(int k=0;k<n;k++){
-            m[s[k]]++;
+        string res="";
+        int n=s.length();
+        vector<int> count(26,0);
+        for(auto ch: s){
+            count[ch-'a']++;
         }
-        
-        while(ans.size()<n){
-            for(auto &i: m){
-                if((i.second)>0){
-                    ans+=i.first;
-                    i.second--;
+        while(n>res.size()){
+            for(int i=0;i<26;i++){
+                if(count[i]>0){
+                    res+=i+'a';
+                    count[i]--;
                 }
             }
-            
-            
-            for(auto j= m.rbegin();j!=m.rend();j++){
-                if((j->second)>0){
-                     ans+=(*j).first;
-                    j->second--;
+            for(int j=25;j>=0;j--){
+                if(count[j]>0){
+                    res+=j+'a';
+                    count[j]--;
                 }
+            }
         }
-    }
-        return ans;
+        return res;
     }
 };
