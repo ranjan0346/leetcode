@@ -20,7 +20,7 @@ public:
         //     overlap= (abs(x[1]-x[2])) * (abs(y[1]-y[2]));
         //     overlap= 
         // }
-        return (abs(ax2-ax1))*(abs(ay2-ay1)) + (abs(bx2-bx1))*(abs(by2-by1))- overlap;
+        return (ax2-ax1)*(ay2-ay1) + (bx2-bx1)*(by2-by1)- overlap;
          
     }
 };
